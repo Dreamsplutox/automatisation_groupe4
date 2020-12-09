@@ -3,7 +3,7 @@ from datetime import timedelta
 
 dag = DAG(
 dag_id = ("toto_2020_12_09"),
-start_date = "2020_12_09",
+start_date = "2020-12-09",
 schedule_interval = timedelta(days=1))
  
 task1 = BashOperator(
