@@ -1,9 +1,9 @@
 from airflow import DAG
-from datetime import timedelta
+from datetime import datetime
 
 dag = DAG(
 dag_id = ("toto_2020_12_09"),
-start_date = "2020-12-09",
+start_date = datetime(2020, 12, 9),
 schedule_interval = timedelta(days=1))
  
 task1 = BashOperator(
