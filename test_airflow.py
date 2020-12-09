@@ -19,5 +19,5 @@ dag = dag)
  
 task3 = BashOperator(
 task_id = "toto3",
-bash_command = "echo {{ ds_nodash }}",
+bash_command = "sleep 5",
 dag = dag)
