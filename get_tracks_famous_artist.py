@@ -163,7 +163,7 @@ if __name__ == "__main__":
     #df.to_csv("spotify_famous_artists.csv", sep = ',', encoding="utf-8-sig", index=False)
 
     #HDFS part
-    source = "track_artists_"+str(datetime.date.today())+".csv"
+    source = "test_track_artists_"+str(datetime.date.today())+".csv"
     destination = "/user/iabd2_group4"
     command = "hdfs dfs -copyFromLocal " + source + " " + destination
     print(command)

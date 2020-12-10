@@ -7,7 +7,7 @@ import sys
 sys.path.insert(0, "/root/airflow/dags/automatisation_groupe4/")
 
 dag = DAG(
-dag_id = ("group4_dag_prime"),
+dag_id = ("group4_dag"),
 start_date = datetime(2020, 12, 9),
 schedule_interval = timedelta(days=1))
  
