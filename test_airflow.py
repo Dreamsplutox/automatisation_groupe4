@@ -2,6 +2,9 @@ from airflow import DAG, macros
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
+import sys
+
+sys.path.insert(0, "/root/airflow/dags/automatisation_groupe4/")
 
 dag = DAG(
 dag_id = ("group4_dag"),
