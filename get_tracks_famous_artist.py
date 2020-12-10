@@ -160,10 +160,10 @@ if __name__ == "__main__":
     # ### Create the dataset
     df = pd.DataFrame(track_artists, columns = ['artist_id', "artist_name", 'track_name', 'track_release_date', 'track_popularity'])
     os.system("")
-    df.to_csv("/tmp/iabd2_group4/test_track_artists_"+str(datetime.date.today())+".csv", sep = ';', encoding="utf-8-sig", index=False)
+    df.to_csv("/user/iabd2_group4/test_track_artists_"+str(datetime.date.today())+".csv", sep = ';', encoding="utf-8-sig", index=False)
     #df.to_csv("spotify_famous_artists.csv", sep = ',', encoding="utf-8-sig", index=False)
 
-    f = open("/tmp/iabd2_group4/demofile2.txt", "w")
+    f = open("/user/iabd2_group4/demofile2.txt", "w")
     f.write("Now the file has more content!")
     f.close()
 
