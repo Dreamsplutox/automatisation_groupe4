@@ -159,16 +159,13 @@ if __name__ == "__main__":
 
     # ### Create the dataset
     df = pd.DataFrame(track_artists, columns = ['artist_id', "artist_name", 'track_name', 'track_release_date', 'track_popularity'])
-    os.system("")
-    df.to_csv("test_track_artists_"+str(datetime.date.today())+".csv", sep = ';', encoding="utf-8-sig", index=False)
+    #os.system("")
+    df.to_csv("track_artists_"+str(datetime.date.today())+".csv", sep = ';', encoding="utf-8-sig", index=False)
     #df.to_csv("spotify_famous_artists.csv", sep = ',', encoding="utf-8-sig", index=False)
 
-    f = open("demofile2.txt", "w")
-    f.write("Now the file has more content!")
-    f.close()
-
+    
     #HDFS part
-    source = "test_track_artists_"+str(datetime.date.today())+".csv"
+    source = "track_artists_"+str(datetime.date.today())+".csv"
     destination = "/user/iabd2_group4"
     command = "hdfs dfs -copyFromLocal " + source + " " + destination
     print(command)
