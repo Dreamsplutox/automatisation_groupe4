@@ -22,7 +22,7 @@ bash_command = "python /root/airflow/dags/automatisation_groupe4/get_tracks_famo
 dag = dag)
 
 task3 = BashOperator(
-trask_id = "load_in_hdfs",
+task_id = "load_in_hdfs",
 bash_command = "hdfs dfs -moveFromLocal /root/airflow/dags/automatisation_groupe4/track_artists_2020-12-10.csv /user/iabd2_group4/",
 dag = dag)
 
