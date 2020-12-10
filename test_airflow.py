@@ -18,5 +18,5 @@ dag = dag)
  
 task2 = BashOperator(
 task_id = "execute_python",
-bash_command = "python spotiyPy_get_tracks_of_famous_artist.py",
+bash_command = "python hello.py",
 dag = dag)
