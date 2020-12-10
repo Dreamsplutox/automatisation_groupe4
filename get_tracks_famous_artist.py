@@ -172,4 +172,4 @@ if __name__ == "__main__":
     destination = "/user/iabd2_group4"
     command = "hdfs dfs -copyFromLocal " + source + " " + destination
     print(command)
-    #os.system(command)
+    os.system(command)
