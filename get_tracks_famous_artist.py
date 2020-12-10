@@ -159,7 +159,7 @@ if __name__ == "__main__":
 
     # ### Create the dataset
     df = pd.DataFrame(track_artists, columns = ['artist_id', "artist_name", 'track_name', 'track_release_date', 'track_popularity'])
-    df.to_csv("track_artists_"+str(datetime.date.today())+".csv", sep = ';', encoding="utf-8-sig", index=False)
+    df.to_csv("/home/iabd2_group4/test_track_artists_"+str(datetime.date.today())+".csv", sep = ';', encoding="utf-8-sig", index=False)
     #df.to_csv("spotify_famous_artists.csv", sep = ',', encoding="utf-8-sig", index=False)
 
     #HDFS part
